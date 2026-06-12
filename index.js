@@ -17,7 +17,7 @@ client.once('ready', () => {
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return;
 
-  if (Math.random() < 0.01) {
+  if (Math.random() < 0.005) {
     await message.channel.send(GIF_URL);
   }
 });
